@@ -1,20 +1,22 @@
-#include <iostream>
-using namespace std;
+/*QUES1 SWAPPING 2 NUMBERS*/
+// C program to swap two variables
+#include <stdio.h>
 
-int main() {    
-    float n1, n2, n3;
+int main()
+{
+	int x, y;
+	printf("Enter Value of x ");
+	scanf("%d", &x);
+	printf("\nEnter Value of y ");
+	scanf("%d", &y);
 
-    cout << "Enter three numbers: ";
-    cin >> n1 >> n2 >> n3;
+	int temp = x;
+	x = y;
+	y = temp;
 
-    if(n1 >= n2 && n1 >= n3)
-        cout << "Largest number: " << n1;
-
-    if(n2 >= n1 && n2 >= n3)
-        cout << "Largest number: " << n2;
-    
-    if(n3 >= n1 && n3 >= n2)
-        cout << "Largest number: " << n3;
-  
-    return 0;
+	printf("\nAfter Swapping: x = %d, y = %d", x, y);
+	return 0;
 }
+
+
+
